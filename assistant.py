@@ -159,13 +159,13 @@ def callback(recognizer, audio):
         print ( f'USER: {clean_prompt}' )
         call = function_call(clean_prompt)
         if 'take screenshot' in call:
-            print('Taking screenshot. ')
+            print('Taking screenshot.')
             take_screenshot ()
-            visual_context = vision_prompt (prompt=clean_prompt, photo_path=' screenshot. jpg' )
+            visual_context = vision_prompt (prompt=clean_prompt, photo_path=' screenshot.jpg' )
         elif 'capture webcam' in call:
             print ( 'Capturing webcam. ' )
             web_cam_capture()
-            visual_context = vision_prompt (prompt=clean_prompt, photo_path='webcam. jpg' )
+            visual_context = vision_prompt (prompt=clean_prompt, photo_path='webcam.jpg' )
         elif 'extract clipboard' in call:
             print ( 'Extracting clipboard text. ')
             paste = get_clipboard_text ()
