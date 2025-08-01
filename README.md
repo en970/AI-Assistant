@@ -27,7 +27,7 @@ Setup Instructions
 
 2. **Install system-level dependencies:**
 - Windows users may need to install `portaudio` and `PyAudio`:
-  - Download PyAudio wheel: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
+  - Download PyAudio wheel: https://pypi.org/project/pyaudio-wheels
   - Install with pip:
     ```
     pip install path_to_downloaded_whl_file
